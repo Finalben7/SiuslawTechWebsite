@@ -4,9 +4,10 @@ Static, multi-page website for Siuslaw Tech LLC.
 
 Structure
 - index.html
-- about/index.html
-- business/index.html
-- residential/index.html
+- pages
+  - about
+  - business
+  - residential
 - assets/css/styles.css
 - assets/js/main.js
 
