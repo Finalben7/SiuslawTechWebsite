@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Siuslaw Tech LLC | Contact</title>
+    <meta name="description" content="Managed IT support for businesses and homes in Florence, Oregon.">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="icon" type="image/png" href="../assets/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg" />
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png" />
+    <link rel="manifest" href="../assets/images/site.webmanifest" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo logo-with-mark" href="../index.html">
+          <img src="../assets/images/logo (black).png" alt="" height="100" width="50">
+          <span>Siuslaw Tech LLC</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="../index.html">Home</a>
+          <a href="business.html">Business</a>
+          <a href="residential.html">Residential</a>
+          <!-- <a href="pages/web.html">Web Services</a> -->
+          <a href="about.html">About</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+<main id="main">
+  <div class="container">
+
+    <!-- Contact -->
+    <section class="section reveal">
+
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-card">
+
+          <h2>Get in Touch</h2>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+
+              <!-- Phone -->
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.4 2.8a2 2 0 0 1-.6 1.8L7.2 9.8a16 16 0 0 0 7 7l1.5-1.7a2 2 0 0 1 1.8-.6l2.8.4A2 2 0 0 1 22 16.9z"/>
+              </svg>
+
+            </div>
+
+            <div>
+              <strong>Phone</strong><br>
+              <a href="tel:+15419018063">541-901-8063</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+
+            <div class="contact-icon">
+
+              <!-- Mail -->
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16v16H4z"/>
+                <path d="M4 7l8 6 8-6"/>
+              </svg>
+
+            </div>
+
+            <div>
+              <strong>Email</strong><br>
+              <a href="mailto:support@siuslawtech.com">support@siuslawtech.com</a>
+            </div>
+
+          </div>
+
+          <div class="contact-item">
+
+            <div class="contact-icon">
+
+              <!-- Location -->
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 21s7-5.7 7-11a7 7 0 1 0-14 0c0 5.3 7 11 7 11z"/>
+                <circle cx="12" cy="10" r="2.5"/>
+              </svg>
+
+            </div>
+
+            <div>
+              <strong>Service Area</strong><br>
+              Florence, Oregon<br>
+              Serving approximately a 50-mile radius.
+            </div>
+
+          </div>
+            <p class="contact-intro">Existing managed service clients receive priority response</p>
+        </div>
+
+        <!-- Contact Form -->
+
+        <div class="contact-card">
+
+          <h2>Send a Message</h2>
+
+          <form id="contactForm"
+                action="/api/contact"
+                method="POST">
+
+            <div class="form-row">
+
+              <div class="form-group">
+                <label for="name">Name *</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  required>
+              </div>
+
+              <div class="form-group">
+                <label for="company">Company</label>
+                <input
+                  id="company"
+                  name="company"
+                  type="text">
+              </div>
+
+            </div>
+
+            <div class="form-row">
+
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="service">What can I help with?</label>
+              <select id="service" name="service">
+                <option value="">Select one...</option>
+                <option>Managed Services</option>
+                <option>Microsoft 365</option>
+                <option>Computer Repair</option>
+                <option>Website Services</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="7" required placeholder="Tell me a little about what you need help with..."></textarea>
+            </div>
+
+            <!-- Cloudflare Turnstile -->
+            <div class="form-group">
+              <div class="cf-turnstile" data-sitekey="0x4AAAAAAD_L8aFr1WlWS8t8"></div>
+            </div>
+
+            <button class="btn primary submit-btn"type="submit">Send Message</button>
+            <p class="form-note">Your message will be sent securely after completing the verification above.</p>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+</div>
+</main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div style="align-items: center; display: flex; justify-content: center;">
+          <img src="../assets/images/logo (black).png" alt="" height="150" width="75">
+        </div>
+        <div>
+          <div class="footer-title">Contact</div>
+          <p>Phone: <a href="tel:+15419018063">541-901-8063</a></p>
+          <p>Email: <a href="mailto:hello@siuslawtech.com">hello@siuslawtech.com</a></p>
+          <p>Service Area: Florence, Oregon (50-mile radius)</p>
+        </div>
+        <div>
+          <div class="footer-title">Explore</div>
+          <p><a href="pages/about.html">About</a></p>
+          <p><a href="pages/business.html">Business Services</a></p>
+          <p><a href="pages/residential.html">Residential Services</a></p>
+        </div>
+      </div>
+      <div class="container fineprint">(c) 2026 Siuslaw Tech LLC. All rights reserved.</div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  </body>
+</html>
