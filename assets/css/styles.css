@@ -511,6 +511,21 @@ textarea{
   height: 120px;
 }
 
+.form-success{
+    text-align:center;
+    padding:3rem 1rem;
+}
+
+.form-success h2{
+    margin-bottom:1rem;
+}
+
+.form-success p{
+    color:var(--muted);
+    max-width:450px;
+    margin:0 auto;
+}
+
 /* =====================
   Code animation
   ===================== */
